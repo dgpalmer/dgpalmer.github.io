@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
+@theme {
+  --color-verde: "#abccba";
+  --color-gris: "#1e211f";
+  --color-oscuror: "#141414";
+  --color-dWhite: "#FFEEFF";
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+body {
+  @apply font-mono;
+}
+.container {
+  @apply max-w-6xl mx-auto;
 }
 
 @theme inline {
@@ -19,8 +33,35 @@
   }
 }
 
+.header {
+  z-index: 11;
+  @apply bg-oscuror h-auto mb-12 sticky top-0 w-full;
+}
+
+.header .section {
+  @apply container items-center grid grid-cols-1 md:grid-cols-6 grid-rows-[auto_1fr] md:pr-8 mb-8;
+}
+
+.nav__wrapper {
+  @apply w-auto mx-auto md:w-full md:mx-0 col-span-1 md:col-span-5 justify-items-center md:justify-items-end pb-4 md:pb-0;
+}
+.nav__wrapper nav {
+  @apply flex gap-4;
+}
+.section--logo {
+  @apply mx-auto items-center col-span-1;
+}
+
+.main {
+  @apply container relative flex flex-col mt-12 gap-y-12 divide-dWhite divide-y;
+}
+
+.footer {
+  @apply bg-oscuror relative bottom-0 w-full;
+}
+.footer .section {
+  @apply container flex-none text-dWhite px-4 md:px-8 py-8 items-center;
+}
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
