@@ -27,8 +27,12 @@ header .container {
   @apply w-full flex flex-row justify-center md:justify-start mb-6 md:mb-0;
 }
 
+.header__nav {
+  @apply content-center;
+}
+
 .header__nav nav {
-  @apply w-full flex flex-row gap-6 justify-center md:justify-end;
+  @apply w-full flex flex-row gap-3 md:gap-6 justify-center md:justify-end items-center;
 }
 
 main {
@@ -60,11 +64,21 @@ footer .container {
 }
 
 .button {
-  padding: 0.5rem 1rem;
-  display: inline-flex;
   border-width: 1px;
   border-color: transparent;
-  @apply bg-black text-dwight rounded-md tracking-tight justify-center;
+  @apply bg-black text-dwight rounded-md tracking-tight justify-center px-4 py-2;
+}
+
+.button:active {
+  text-decoration: dashed;
+  text-underline-offset: 4px;
+  @apply active:border-dwight active:underline active:active:text-white;
+}
+
+.button:hover {
+  text-decoration: dashed;
+  text-underline-offset: 4px;
+  @apply hover:border-dwight hover:underline hover:active:text-white;
 }
 
 .icon a img {

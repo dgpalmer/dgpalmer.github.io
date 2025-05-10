@@ -31,6 +31,9 @@ export default function Header() {
             <a className="button" href="{ baseurl }/#current" role="button">
               xp
             </a>
+            <a className="button" href="{ baseurl }/#repos" role="button">
+              repos
+            </a>
             <a
               className="button button--cv__sm"
               target="_blank"
