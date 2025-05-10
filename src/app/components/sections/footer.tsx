@@ -1,26 +1,25 @@
+import { Icon } from "../icon";
+import socials from "../../content/socials.json";
+
 export default function Footer() {
-  const github = "dgpalmer";
-  const linkedin = "dgpalmer";
-  const email = "donovan@donovanpalmer.net";
+  const year = new Date().getFullYear();
   return (
     <footer>
       <div className="container">
         <div className="footer__socials">
           <ul>
-            <li>
-              <a href="{{ github }}">github</a>
-            </li>
-            <li>
-              <a href="{{ linkedin }}">linkedin</a>
-            </li>
-            <li>
-              <a href="mailto:{ email }">email</a>
-            </li>
+            {socials.map((social) => (
+              <li key={`social-${social.key}`}>
+                <Icon alt={social.alt} href={social.href} icon={social.icon} />
+              </li>
+            ))}
           </ul>
         </div>
         <div className="footer__copyright">
-          <p className="text-sm">©2025 {github}</p>
-          <p className="text-sm">All Rights Reserved.</p>
+          <div className="flex flex-row">
+            <p className="text-sm">© {year} Donovan Palmer</p>
+            <p className="text-sm">All Rights Reserved.</p>
+          </div>
         </div>
       </div>
     </footer>

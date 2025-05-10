@@ -16,7 +16,7 @@ export default function Header() {
               decoding="async"
               data-nimg="1"
               className="w-auto h-20"
-              src="/dplogo.png"
+              src="/images/dplogo.png"
             />
           </a>
         </div>

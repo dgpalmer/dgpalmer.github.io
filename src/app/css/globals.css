@@ -66,3 +66,9 @@ footer .container {
   border-color: transparent;
   @apply bg-black text-dwight rounded-md tracking-tight justify-center;
 }
+
+.icon {
+  @apply bg-dwight text-black;
+  width: 4rem;
+  height: 4rem;
+}

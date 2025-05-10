@@ -7,7 +7,7 @@ module.exports = {
         verde: "#abccba",
         gris: "#1e211f",
         oscuror: "#141414",
-        dWhite: "#FFEEFF",
+        dwight: "#FFEEFF",
       },
     },
   },
