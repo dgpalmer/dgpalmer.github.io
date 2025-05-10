@@ -3,16 +3,12 @@ export default function Footer() {
   const linkedin = "dgpalmer";
   const email = "donovan@donovanpalmer.net";
   return (
-    <footer classNameName="footer">
+    <footer className="footer">
       <div className="section">
         <div className="footer--styles">
           <div className="footer--socials">
-            <a href="{ github }" target="_blank">
-              github
-            </a>
-            <a href="{ linkedin }" target="_blank">
-              linkedin
-            </a>
+            <a href="{{ github }}">github</a>
+            <a href="{{ linkedin }}">linkedin</a>
             <a href="mailto:{ email }">email</a>
           </div>
           <div className="footer--copyright">
