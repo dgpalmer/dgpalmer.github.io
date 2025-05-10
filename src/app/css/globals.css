@@ -20,17 +20,18 @@ header {
 }
 
 header .container {
-  @apply items-center grid grid-cols-1 md:grid-cols-6 grid-rows-[auto_1fr] md:pr-8 mb-8;
+  @apply flex flex-col md:flex-row justify-between py-6;
+}
+
+.header__logo {
+  @apply w-full;
 }
 
 .header__nav {
-  @apply w-auto mx-auto flex gap-4 md:w-full md:mx-0 col-span-1 md:col-span-5 justify-items-center md:justify-items-end pb-4 md:pb-0;
+  @apply w-full my-auto;
 }
 .header__nav nav {
-  @apply flex gap-4;
-}
-.header__logo {
-  @apply mx-auto items-center col-span-1;
+  @apply w-full flex flex-row gap-6 justify-center md:justify-end;
 }
 
 main {
