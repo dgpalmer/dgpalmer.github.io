@@ -36,10 +36,27 @@ main {
 }
 
 footer {
-  @apply bg-oscuror relative bottom-0 w-full;
+  @apply bg-oscuror relative bottom-0 w-full mt-12;
 }
 footer .container {
-  @apply flex-none text-dwight px-4 md:px-8 py-8 items-center;
+  @apply flex flex-col md:flex-row md:justify-between text-dwight py-6;
+}
+.footer__socials {
+  @apply bg-slate-100 text-black;
+}
+
+.footer__socials ul {
+  @apply w-full flex flex-row gap-6 justify-center md:justify-start;
+}
+.footer__copyright {
+  @apply w-full flex justify-center md:justify-end bg-slate-400 mt-6 md:mt-0;
+}
+
+.section--resume {
+  @apply text-dwight;
+}
+.section--resume .embed--resume {
+  padding: 2rem 0;
 }
 
 .button {
