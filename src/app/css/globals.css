@@ -20,16 +20,13 @@ header {
 }
 
 header .container {
-  @apply flex flex-col md:flex-row justify-between py-6;
+  @apply flex flex-col md:flex-row md:justify-between py-6;
 }
 
 .header__logo {
-  @apply w-full;
+  @apply w-full flex flex-row justify-center md:justify-start mb-6 md:mb-0;
 }
 
-.header__nav {
-  @apply w-full my-auto;
-}
 .header__nav nav {
   @apply w-full flex flex-row gap-6 justify-center md:justify-end;
 }

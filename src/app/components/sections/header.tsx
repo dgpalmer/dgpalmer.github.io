@@ -1,7 +1,8 @@
 import Image from "next/image";
 
+const baseurl = "/";
+
 export default function Header() {
-  const baseurl = "/";
   return (
     <header>
       <div className="container">
@@ -35,9 +36,6 @@ export default function Header() {
               target="_blank"
               href="{ baseurl }/files/DonovanPalmersResume2021.pdf"
             >
-              cv
-            </a>
-            <a className="button button--cv__md" href="{ baseurl }/cv">
               cv
             </a>
           </nav>
