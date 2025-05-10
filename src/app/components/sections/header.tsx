@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const baseurl = "/";
 
@@ -7,7 +8,7 @@ export default function Header() {
     <header>
       <div className="container">
         <div className="header__logo">
-          <a aria-label="home" href="{ baseurl }">
+          <Link aria-label="Home" href="/">
             <Image
               alt="logo"
               fetchPriority="high"
@@ -18,20 +19,20 @@ export default function Header() {
               className="w-auto h-20"
               src="/images/dplogo.png"
             />
-          </a>
+          </Link>
         </div>
         <div className="header__nav">
           <nav>
-            <a className="button" href="{ baseurl }/#interests" role="button">
+            <a className="button" href="#interests" role="button">
               interests
             </a>
-            <a className="button" href="{ baseurl }/#skills" role="button">
+            <a className="button" href="#skills" role="button">
               skills
             </a>
-            <a className="button" href="{ baseurl }/#current" role="button">
+            <a className="button" href="#current" role="button">
               xp
             </a>
-            <a className="button" href="{ baseurl }/#repos" role="button">
+            <a className="button" href="#repos" role="button">
               repos
             </a>
             <a
