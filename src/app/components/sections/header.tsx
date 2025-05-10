@@ -22,19 +22,20 @@ export default function Header() {
         </div>
         <div className="header__nav">
           <nav>
-            <a className="button" href="{ baseurl }/#interests">
+            <a className="button" href="{ baseurl }/#interests" role="button">
               interests
             </a>
-            <a className="button" href="{ baseurl }/#skills">
+            <a className="button" href="{ baseurl }/#skills" role="button">
               skills
             </a>
-            <a className="button" href="{ baseurl }/#current">
+            <a className="button" href="{ baseurl }/#current" role="button">
               xp
             </a>
             <a
               className="button button--cv__sm"
               target="_blank"
               href="{ baseurl }/files/DonovanPalmersResume2021.pdf"
+              role="button"
             >
               cv
             </a>
