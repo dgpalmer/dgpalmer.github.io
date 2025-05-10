@@ -10,13 +10,18 @@ export default function Footer() {
           <ul>
             {socials.map((social) => (
               <li key={`social-${social.key}`}>
-                <Icon alt={social.alt} href={social.href} icon={social.icon} />
+                <Icon
+                  alt={social.alt}
+                  href={social.href}
+                  svg={social.svg}
+                  icon={social.icon}
+                />
               </li>
             ))}
           </ul>
         </div>
         <div className="footer__copyright">
-          <div className="flex flex-row">
+          <div className="flex flex-col">
             <p className="text-sm">© {year} Donovan Palmer</p>
             <p className="text-sm">All Rights Reserved.</p>
           </div>

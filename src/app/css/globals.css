@@ -42,14 +42,14 @@ footer .container {
   @apply flex flex-col md:flex-row md:justify-between text-dwight py-6;
 }
 .footer__socials {
-  @apply bg-slate-100 text-black;
+  @apply text-dwight;
 }
 
 .footer__socials ul {
   @apply w-full flex flex-row gap-6 justify-center md:justify-start;
 }
 .footer__copyright {
-  @apply w-full flex justify-center md:justify-end bg-slate-400 mt-6 md:mt-0;
+  @apply w-full flex justify-center md:justify-end mt-6 md:mt-0 text-center md:text-right;
 }
 
 .section--resume {
@@ -67,8 +67,8 @@ footer .container {
   @apply bg-black text-dwight rounded-md tracking-tight justify-center;
 }
 
-.icon {
-  @apply bg-dwight text-black;
-  width: 4rem;
-  height: 4rem;
+.icon a img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
 }
