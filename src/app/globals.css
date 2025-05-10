@@ -1,11 +1,6 @@
-@import "tailwindcss";
-
-@theme {
-  --color-verde: "#abccba";
-  --color-gris: "#1e211f";
-  --color-oscuror: "#141414";
-  --color-dWhite: "#FFEEFF";
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
