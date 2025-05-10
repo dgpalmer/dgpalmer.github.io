@@ -6,8 +6,6 @@ body {
   @apply font-mono flex flex-col h-screen justify-between font-mono antialiased bg-gris;
 }
 
-.section {
-}
 .container {
   @apply max-w-5xl mx-auto;
 }
@@ -16,35 +14,40 @@ body {
   @apply flex flex-col w-full p-4;
 }
 
-.header {
+header {
   z-index: 11;
   @apply bg-oscuror h-auto mb-12 sticky top-0 w-full;
 }
 
-.header .section {
-  @apply container items-center grid grid-cols-1 md:grid-cols-6 grid-rows-[auto_1fr] md:pr-8 mb-8;
+header .container {
+  @apply items-center grid grid-cols-1 md:grid-cols-6 grid-rows-[auto_1fr] md:pr-8 mb-8;
 }
 
-.nav__wrapper {
-  @apply w-auto mx-auto md:w-full md:mx-0 col-span-1 md:col-span-5 justify-items-center md:justify-items-end pb-4 md:pb-0;
+.header__nav {
+  @apply w-auto mx-auto flex gap-4 md:w-full md:mx-0 col-span-1 md:col-span-5 justify-items-center md:justify-items-end pb-4 md:pb-0;
 }
-.nav__wrapper nav {
+.header__nav nav {
   @apply flex gap-4;
 }
-.section--logo {
+.header__logo {
   @apply mx-auto items-center col-span-1;
 }
 
-.main {
-  @apply container relative flex flex-col mt-12 gap-y-12 divide-dWhite divide-y;
+main {
+  @apply relative flex flex-col mt-12 gap-y-12 divide-dwight divide-y;
 }
 
-.footer {
+footer {
   @apply bg-oscuror relative bottom-0 w-full;
 }
-.footer .section {
-  @apply container flex-none text-dWhite px-4 md:px-8 py-8 items-center;
+footer .container {
+  @apply flex-none text-dwight px-4 md:px-8 py-8 items-center;
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
+
+.button {
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  border-width: 1px;
+  border-color: transparent;
+  @apply bg-black text-dwight rounded-md tracking-tight justify-center;
 }

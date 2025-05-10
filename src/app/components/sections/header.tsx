@@ -1,11 +1,13 @@
+import Image from "next/image";
+
 export default function Header() {
   const baseurl = "/";
   return (
-    <header className="header">
-      <div className="section">
-        <div className="section--logo">
+    <header>
+      <div className="container">
+        <div className="header__logo">
           <a aria-label="home" href="{ baseurl }">
-            <img
+            <Image
               alt="logo"
               fetchPriority="high"
               width="200"
@@ -17,7 +19,7 @@ export default function Header() {
             />
           </a>
         </div>
-        <div className="nav__wrapper">
+        <div className="header__nav">
           <nav>
             <a className="button" href="{ baseurl }/#interests">
               interests
