@@ -10,8 +10,20 @@ body {
   @apply max-w-5xl mx-auto;
 }
 
+.sections {
+  @apply divide-y-2 divide-dwight;
+}
+
 .section {
-  @apply flex flex-col w-full p-4;
+  @apply flex flex-col w-full px-8 py-12 text-dwight;
+}
+
+.section:nth-child(even) {
+  @apply text-right;
+}
+
+.section h2 {
+  @apply text-4xl md:text-5xl py-6;
 }
 
 header {
@@ -48,7 +60,6 @@ footer .container {
 .footer__socials {
   @apply text-dwight;
 }
-
 .footer__socials ul {
   @apply w-full flex flex-row gap-6 justify-center md:justify-start;
 }
