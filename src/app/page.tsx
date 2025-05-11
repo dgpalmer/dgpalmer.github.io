@@ -10,7 +10,7 @@ export default function Home() {
       <div className="flex flex-col sections">
         <div className="section">
           <div>
-            <h1 className="text-2xl">my homepage heading</h1>
+            <h1 className="text-5xl">my homepage heading</h1>
           </div>
         </div>
         <div className="section">

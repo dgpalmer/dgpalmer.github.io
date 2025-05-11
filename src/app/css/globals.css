@@ -25,6 +25,9 @@ body {
 .section h2 {
   @apply text-4xl md:text-5xl py-6;
 }
+.section h3 {
+  @apply text-xl md:text-2xl;
+}
 
 header {
   z-index: 11;
