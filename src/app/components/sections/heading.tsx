@@ -20,7 +20,7 @@ export default function Heading() {
             decoding="async"
             data-nimg="1"
             sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
-            src="/images/mugshot.jpg"
+            src="/images/mugshot.webp"
           />
         </div>
       </div>
