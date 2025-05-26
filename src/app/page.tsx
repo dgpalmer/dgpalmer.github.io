@@ -1,9 +1,9 @@
-import Interests from "@/markdown/interests.mdx";
-import Skills from "@/markdown/skills.mdx";
-import Current from "@/markdown/current.mdx";
-import Past from "@/markdown/past.mdx";
-import Repos from "@/markdown/repos.mdx";
-import Heading from "./components/sections/heading";
+import Interests from '@/markdown/interests.mdx';
+import Skills from '@/markdown/skills.mdx';
+import Current from '@/markdown/current.mdx';
+import Past from '@/markdown/past.mdx';
+import Repos from '@/markdown/repos.mdx';
+import Heading from './components/sections/heading';
 
 export default function Home() {
   return (

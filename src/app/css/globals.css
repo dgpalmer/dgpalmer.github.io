@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Common Styles */
 body {
   @apply flex flex-col h-screen justify-between font-mono antialiased bg-gris;
+}
+
+main {
+  @apply relative flex flex-col mt-12 gap-y-12 divide-dwight divide-y;
 }
 
 .container {
@@ -18,14 +23,43 @@ body {
   @apply flex flex-col w-full px-8 py-12 text-dwight;
 }
 
+.button {
+  border-width: 1px;
+  border-color: transparent;
+  @apply bg-black text-dwight rounded-md tracking-tight justify-center px-4 py-2 active:underline hover:underline active:border-dwight hover:border-dwight underline-offset-4;
+}
+
+.button:active,
+.button:hover {
+  text-decoration-style: dashed;
+}
+
 .section:nth-child(even) {
   @apply text-right;
 }
 
 .section__heading {
-  @apply text-4xl md:text-5xl py-6;
+  @apply text-3xl md:text-4xl tracking-wide py-6;
 }
 
+.section__subheading {
+  @apply text-xl md:text-2xl tracking-wide py-6
+}
+
+.section__link {
+  text-decoration-style: dashed;
+  @apply font-bold hover:underline underline-offset-2;
+}
+
+.section__subheading .section__link {
+  @apply text-lg md:text-xl;
+}
+
+.text__emphasis {
+  @apply font-bold tracking-wide;
+}
+
+/* Site Header */
 header {
   z-index: 11;
   @apply bg-oscuror h-auto mb-12 sticky top-0 w-full;
@@ -44,13 +78,10 @@ header .container {
 }
 
 .header__nav nav {
-  @apply w-full flex flex-row gap-3 md:gap-6 justify-center md:justify-end items-center;
+  @apply w-full flex flex-row gap-2 md:gap-6 justify-center md:justify-end items-center;
 }
 
-main {
-  @apply relative flex flex-col mt-12 gap-y-12 divide-dwight divide-y;
-}
-
+/* Site Footer */
 footer {
   @apply bg-oscuror relative bottom-0 w-full mt-12;
 }
@@ -69,32 +100,6 @@ footer .container {
 
 .footer__copyright {
   @apply w-full flex justify-center md:justify-end mt-6 md:mt-0 text-center md:text-right;
-}
-
-.section--resume {
-  @apply text-dwight;
-}
-
-.section--resume .embed--resume {
-  padding: 2rem 0;
-}
-
-.button {
-  border-width: 1px;
-  border-color: transparent;
-  @apply bg-black text-dwight rounded-md tracking-tight justify-center px-4 py-2;
-}
-
-.button:active {
-  text-decoration: dashed;
-  text-underline-offset: 4px;
-  @apply active:border-dwight active:underline active:active:text-white;
-}
-
-.button:hover {
-  text-decoration: dashed;
-  text-underline-offset: 4px;
-  @apply hover:border-dwight hover:underline hover:active:text-white;
 }
 
 .icon a img {
@@ -124,4 +129,13 @@ footer .container {
 .heading .heading__image img {
   color: transparent;
   @apply absolute inset-0 h-full w-full object-cover;
+}
+
+/* Resume Page */
+.section__resume {
+  @apply text-dwight;
+}
+
+.section__resume .embed__resume {
+  padding: 2rem 0;
 }
