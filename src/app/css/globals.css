@@ -39,7 +39,7 @@ main {
 }
 
 .section__heading {
-  @apply text-3xl md:text-4xl tracking-wide py-6;
+  @apply text-4xl tracking-wide py-6;
 }
 
 .section__subheading {
