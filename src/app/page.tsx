@@ -3,15 +3,14 @@ import Skills from "@/markdown/skills.mdx";
 import Current from "@/markdown/current.mdx";
 import Past from "@/markdown/past.mdx";
 import Repos from "@/markdown/repos.mdx";
+import Heading from "./components/sections/heading";
 
 export default function Home() {
   return (
     <main className="container">
       <div className="flex flex-col sections">
         <div className="section">
-          <div>
-            <h1 className="text-5xl">my homepage heading</h1>
-          </div>
+          <Heading />
         </div>
         <div className="section">
           <Interests />

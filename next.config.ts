@@ -1,8 +1,14 @@
-import createMDX from "@next/mdx";
-import type { NextConfig } from "next";
+import createMDX from '@next/mdx';
+import type { NextConfig } from 'next';
+
+const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig: NextConfig = {
-  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  output: 'export',
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+  assetPrefix: isProd ? '/<dgpalmer.github.io-nextjs>/' : '',
+  basePath: isProd ? '/<dgpalmer.github.io-nextjs>' : '',
+  images: { unoptimized: true },
 };
 
 const withMDX = createMDX({

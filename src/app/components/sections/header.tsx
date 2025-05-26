@@ -1,7 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-
-const baseurl = "/";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -12,8 +10,8 @@ export default function Header() {
             <Image
               alt="logo"
               fetchPriority="high"
-              width="200"
-              height="200"
+              width="100"
+              height="100"
               decoding="async"
               data-nimg="1"
               className="w-auto h-20"
