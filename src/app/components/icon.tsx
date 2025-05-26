@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 interface IconProps {
   icon: string;
@@ -6,7 +6,7 @@ interface IconProps {
   alt: string;
 }
 
-export const Icon = (props: IconProps) => {
+const Icon = (props: IconProps) => {
   return (
     <div className="icon">
       <a href={props.href} role="button">
@@ -15,3 +15,5 @@ export const Icon = (props: IconProps) => {
     </div>
   );
 };
+
+export default Icon;

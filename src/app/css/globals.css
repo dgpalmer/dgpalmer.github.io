@@ -35,7 +35,11 @@ main {
 }
 
 .section:nth-child(even) {
-  @apply text-right;
+  @apply items-end text-right;
+}
+
+.section:last-child {
+  @apply items-start text-left;
 }
 
 .section__heading {
@@ -53,6 +57,10 @@ main {
 
 .section__subheading .section__link {
   @apply text-lg md:text-xl;
+}
+
+.section__li {
+  list-style-type: square;
 }
 
 .text__emphasis {

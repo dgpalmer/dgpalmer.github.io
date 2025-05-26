@@ -18,6 +18,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     a: (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
       <a className="section__link" {...props} />
     ),
+    li: (props: React.HTMLAttributes<HTMLLIElement>) => (
+      <li className="section__li" {...props} />
+    ),
     ...components,
   };
 }

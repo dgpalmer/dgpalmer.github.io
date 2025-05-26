@@ -1,5 +1,5 @@
-import { Icon } from "../icon";
-import socials from "../../content/socials.json";
+import Icon from '../icon';
+import socials from '../../content/socials.json';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -13,7 +13,6 @@ export default function Footer() {
                 <Icon
                   alt={social.alt}
                   href={social.href}
-                  svg={social.svg}
                   icon={social.icon}
                 />
               </li>

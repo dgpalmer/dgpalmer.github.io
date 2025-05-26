@@ -10,10 +10,9 @@ const nextConfig: NextConfig = {
   basePath: isProd ? '/<dgpalmer.github.io-nextjs>' : '',
   images: { unoptimized: true },
 };
-
 const withMDX = createMDX({
   // add markdown plugins here, as desired
-  extension: /\.(md|msx)$/,
+  extension: /\.mdx?$/,
 });
 
 export default withMDX(nextConfig);
