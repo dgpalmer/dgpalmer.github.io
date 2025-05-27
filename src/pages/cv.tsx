@@ -1,6 +1,5 @@
 import Layout from '@/components/layout';
 import { useMediaQuery } from 'react-responsive'
-import isMobile from '@/utils/isMobile';
 
 export async function getStaticProps() {
   const data = {
