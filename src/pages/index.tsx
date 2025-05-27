@@ -3,8 +3,8 @@ import Skills from '@/markdown/skills.mdx';
 import Current from '@/markdown/current.mdx';
 import Past from '@/markdown/past.mdx';
 import Repos from '@/markdown/repos.mdx';
-import Heading from '../components/sections/heading';
-import Layout from '../layout';
+import Heading from '../components/heading';
+import Layout from '../components/layout';
 
 export async function getStaticProps() {
   const data = {
@@ -18,6 +18,7 @@ export async function getStaticProps() {
     }
   }
 }
+
 export default function Home({ ...props }) {
   return (
     <Layout>

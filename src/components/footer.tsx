@@ -1,5 +1,5 @@
-import Icon from '../icon';
-import socials from '../../content/socials.json';
+import Icon from './icon';
+import socials from '../content/socials.json';
 
 export default function Footer() {
   const year = new Date().getFullYear();
