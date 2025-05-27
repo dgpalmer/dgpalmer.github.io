@@ -1,14 +1,8 @@
 import type { Metadata } from 'next';
 import Header from './components/sections/header';
 import Footer from './components/sections/footer';
-import './css/globals.css';
 
-export const metadata: Metadata = {
-  title: 'Donovan Palmer',
-  description: 'father, husband, developer',
-};
-
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
