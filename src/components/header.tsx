@@ -35,8 +35,7 @@ export default function Header() {
             </a>
             <a
               className="button button--cv__sm"
-              target="_blank"
-              href="{ baseurl }/files/DonovanPalmersResume2021.pdf"
+              href="/cv"
               role="button"
             >
               cv
