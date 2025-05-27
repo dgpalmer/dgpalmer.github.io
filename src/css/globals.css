@@ -38,10 +38,6 @@ main {
   @apply items-end text-right;
 }
 
-.section:last-child {
-  @apply items-start text-left;
-}
-
 .section__heading {
   @apply text-4xl tracking-wide py-6;
 }

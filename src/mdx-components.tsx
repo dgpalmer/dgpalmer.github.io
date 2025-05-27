@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { type ReactNode } from 'react';
 import type { MDXComponents } from 'mdx/types';
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
+    wrapper: ({ children }: { children: ReactNode }) => {
+      return <div className="section">{children}</div>;
+    },
     h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
       <h2 className="section__heading" {...props} />
     ),

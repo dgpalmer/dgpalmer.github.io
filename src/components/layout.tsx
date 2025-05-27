@@ -2,6 +2,7 @@ import Header from './header';
 import Footer from './footer';
 import Head from 'next/head';
 import metadata from '../utils/metadata'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function Layout({
   children,
@@ -24,10 +25,11 @@ export default function Layout({
         />
         <meta name="robots" content="index, follow" />
       </Head>
+      <GoogleAnalytics gaId="G-P1PY7S9R3P" />
       <body className="h-full scroll-smooth">
         <Header />
         {children}
-        <Footer />2
+        <Footer />
       </body>
     </html>
   );

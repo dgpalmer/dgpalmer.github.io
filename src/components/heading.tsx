@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Heading() {
   return (
-    <div id="heading" className="container heading">
+    <div id="heading" className="section heading">
       <div className="heading__styles">
         <div className="heading__content">
           <h1 id="page-title" className="heading__title">
