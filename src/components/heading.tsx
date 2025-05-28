@@ -13,8 +13,8 @@ export default function Heading() {
         </div>
         <div className="heading__image">
           <Image
-            alt=""
-            loading="lazy"
+            priority
+            alt="Self Portrait"
             width="200"
             height="200"
             decoding="async"
