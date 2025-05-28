@@ -1,7 +1,12 @@
 import createMDX from '@next/mdx';
 import type { NextConfig } from 'next';
 
-const isProd = process.env.NODE_ENV === 'production'
+let isProd = false
+if (process.env.ENV !== undefined) {
+  isProd = process.env.ENV === 'production'
+} else {
+  isProd = process.env.NODE_ENV === 'production'
+}
 
 const nextConfig: NextConfig = {
   output: 'export',

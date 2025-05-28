@@ -33,13 +33,13 @@ export default function Header() {
             <a className="button" href="#repos" role="button">
               repos
             </a>
-            <a
+            <Link
               className="button button--cv__sm"
               href="/cv"
               role="button"
             >
               cv
-            </a>
+            </Link>
           </nav>
         </div>
       </div>

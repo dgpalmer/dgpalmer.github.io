@@ -24,9 +24,10 @@ main {
 }
 
 .button {
-  border-width: 1px;
+  border-width: 3px;
   border-color: transparent;
-  @apply bg-black text-dwight rounded-md tracking-tight justify-center px-4 py-2 active:underline hover:underline active:border-dwight hover:border-dwight underline-offset-4;
+  border-radius: 3px;
+  @apply bg-black text-dwight rounded-md tracking-tight justify-center px-4 py-3 active:underline hover:underline active:border-dwight hover:border-dwight underline-offset-4;
 }
 
 .button:active,
