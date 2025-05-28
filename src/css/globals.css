@@ -47,6 +47,10 @@ main {
   @apply text-xl md:text-2xl tracking-wide py-6
 }
 
+.section__content {
+  @apply text-lg
+}
+
 .section__link {
   text-decoration-style: dashed;
   @apply font-bold hover:underline underline-offset-2;
