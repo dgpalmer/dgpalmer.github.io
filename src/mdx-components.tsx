@@ -1,14 +1,21 @@
 import React, { type ReactNode } from 'react';
 import type { MDXComponents } from 'mdx/types';
+import { Heading } from '@/components/mdx/heading';
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     wrapper: ({ children }: { children: ReactNode }) => {
       return <div className="section">{children}</div>;
     },
-    h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
-      <h2 className="section__heading" {...props} />
-    ),
+    h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => {
+      // Unique ID Generation
+      const id = typeof props.children === 'string'
+        ? props.children.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
+        : '';
+      return (
+        <h2 id={id} className="section__heading" {...props} />
+      )
+    },
     h3: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
       <h3 className="section__subheading" {...props} />
     ),

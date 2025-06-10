@@ -21,18 +21,18 @@ export default function Header() {
         </div>
         <div className="header__nav">
           <nav>
-            <a className="button" href="#interests" role="button">
+            <Link className="button" href="/#interests" role="button">
               interests
-            </a>
-            <a className="button" href="#skills" role="button">
+            </Link>
+            <Link className="button" href="/#skills" role="button">
               skills
-            </a>
-            <a className="button" href="#current" role="button">
+            </Link>
+            <Link className="button" href="/#current" role="button">
               xp
-            </a>
-            <a className="button" href="#repos" role="button">
+            </Link>
+            <Link className="button" href="/#repos" role="button">
               repos
-            </a>
+            </Link>
             <Link
               className="button button--cv__sm"
               href="/cv"
