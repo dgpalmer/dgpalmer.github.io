@@ -11,8 +11,8 @@ if (process.env.ENV !== undefined) {
 const nextConfig: NextConfig = {
   output: 'export',
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-  assetPrefix: isProd ? '/dgpalmer.github.io-nextjs' : undefined,
-  basePath: isProd ? '/dgpalmer.github.io-nextjs' : undefined,
+  assetPrefix: isProd ? '/dgpalmer.github.io' : undefined,
+  basePath: isProd ? '/dgpalmer.github.io' : undefined,
   images: { unoptimized: true },
 };
 const withMDX = createMDX({
