@@ -30,9 +30,6 @@ export default function Header() {
             <Link className="button" href="/#current" role="button">
               xp
             </Link>
-            <Link className="button" href="/#repos" role="button">
-              repos
-            </Link>
             <Link
               className="button button--cv__sm"
               href="/cv"
