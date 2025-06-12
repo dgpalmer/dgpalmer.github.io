@@ -39,11 +39,8 @@ main {
   @apply items-end text-right;
 }
 
-.section__anchor {
-  scroll-margin-top: 130px;
-}
-
 .section__heading {
+  scroll-margin-top: 130px;
   @apply text-4xl tracking-wide py-6;
 }
 

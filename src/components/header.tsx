@@ -27,7 +27,7 @@ export default function Header() {
             <Link className="button" href="/#skills" role="button">
               skills
             </Link>
-            <Link className="button" href="/#xp" role="button">
+            <Link className="button" href="/#current" role="button">
               xp
             </Link>
             <Link

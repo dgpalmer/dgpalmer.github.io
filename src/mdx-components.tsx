@@ -6,15 +6,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     wrapper: ({ children }: { children: ReactNode }) => {
       return <div className="section">{children}</div>;
     },
-    h6: (props: React.HTMLAttributes<HTMLHeadingElement>) => {
-      // Unique ID Generation
-      const id = typeof props.children === 'string'
-        ? props.children.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
-        : '';
-      return (
-        <div id={id} className="section__anchor" />
-      )
-    },
     h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => {
       // Unique ID Generation
       const id = typeof props.children === 'string'
