@@ -39,6 +39,10 @@ main {
   @apply items-end text-right;
 }
 
+.section__anchor {
+  scroll-margin-top: 130px;
+}
+
 .section__heading {
   @apply text-4xl tracking-wide py-6;
 }
@@ -71,7 +75,7 @@ main {
 /* Site Header */
 header {
   z-index: 11;
-  @apply bg-oscuror h-auto mb-12 sticky top-0 w-full;
+  @apply bg-oscuror h-auto sticky top-0 w-full;
 }
 
 header .container {
