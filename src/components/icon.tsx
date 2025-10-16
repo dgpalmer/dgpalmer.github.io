@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 interface IconProps {
-  icon: string;
-  href: string;
-  alt: string;
+  icon: string
+  href: string
+  alt: string
 }
 
 const Icon = (props: IconProps) => {
@@ -14,7 +14,7 @@ const Icon = (props: IconProps) => {
         <Image src={props.icon} width={20} height={20} alt={props.alt} />
       </a>
     </div>
-  );
-};
+  )
+}
 
-export default Icon;
+export default Icon
