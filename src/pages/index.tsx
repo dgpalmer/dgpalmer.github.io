@@ -1,16 +1,16 @@
-import Interests from '@/markdown/interests.mdx';
-import Skills from '@/markdown/skills.mdx';
-import Current from '@/markdown/current.mdx';
-import Previous from '@/markdown/previous.mdx';
-import Past from '@/markdown/past.mdx';
-import Repos from '@/markdown/repos.mdx';
-import Heading from '../components/heading';
-import Layout from '../components/layout';
+import Interests from '@/markdown/interests.mdx'
+import Skills from '@/markdown/skills.mdx'
+import Current from '@/markdown/current.mdx'
+import Previous from '@/markdown/previous.mdx'
+import Past from '@/markdown/past.mdx'
+import Repos from '@/markdown/repos.mdx'
+import Heading from '../components/heading'
+import Layout from '../components/layout'
 
 export async function getStaticProps() {
   const data = {
     title: 'Donovan Palmer',
-    description: 'father, husband, developer',
+    description: 'father, husband, developer'
   }
 
   return {
@@ -35,5 +35,5 @@ export default function Home({ ...props }) {
         </div>
       </main>
     </Layout>
-  );
+  )
 }
