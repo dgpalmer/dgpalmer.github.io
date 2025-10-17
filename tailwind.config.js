@@ -7,9 +7,9 @@ module.exports = {
         verde: '#abccba',
         gris: '#1e211f',
         oscuror: '#141414',
-        dwight: '#FFEEFF',
-      },
-    },
+        dwight: '#FFEEFF'
+      }
+    }
   },
-  plugins: [],
-};
+  plugins: []
+}

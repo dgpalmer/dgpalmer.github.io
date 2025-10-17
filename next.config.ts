@@ -1,5 +1,5 @@
-import createMDX from '@next/mdx';
-import type { NextConfig } from 'next';
+import createMDX from '@next/mdx'
+import type { NextConfig } from 'next'
 
 let isProd = false
 if (process.env.ENV !== undefined) {
@@ -11,11 +11,11 @@ if (process.env.ENV !== undefined) {
 const nextConfig: NextConfig = {
   output: 'export',
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-  images: { unoptimized: true },
-};
+  images: { unoptimized: true }
+}
 const withMDX = createMDX({
   // add markdown plugins here, as desired
-  extension: /\.mdx?$/,
-});
+  extension: /\.mdx?$/
+})
 
-export default withMDX(nextConfig);
+export default withMDX(nextConfig)

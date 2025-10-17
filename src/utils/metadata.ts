@@ -1,6 +1,7 @@
 const metadata = {
   title: 'Donovan Palmer | father, husband, developer',
-  description: 'senior solutions architect & web developer working for Universal Music Group',
+  description:
+    'senior solutions architect & web developer working for Universal Music Group',
   keywords: [
     'developer',
     'react',
@@ -21,4 +22,4 @@ const metadata = {
   ]
 }
 
-export default metadata;
+export default metadata

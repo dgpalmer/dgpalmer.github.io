@@ -1,8 +1,8 @@
-import Icon from './icon';
-import socials from '../content/socials.json';
+import Icon from './icon'
+import socials from '../content/socials.json'
 
 export default function Footer() {
-  const year = new Date().getFullYear();
+  const year = new Date().getFullYear()
   return (
     <footer>
       <div className="container">
@@ -10,11 +10,7 @@ export default function Footer() {
           <ul>
             {socials.map((social) => (
               <li key={`social-${social.key}`}>
-                <Icon
-                  alt={social.alt}
-                  href={social.href}
-                  icon={social.icon}
-                />
+                <Icon alt={social.alt} href={social.href} icon={social.icon} />
               </li>
             ))}
           </ul>
@@ -27,5 +23,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

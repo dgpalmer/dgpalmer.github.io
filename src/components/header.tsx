@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Header() {
   return (
@@ -30,16 +30,12 @@ export default function Header() {
             <Link className="button" href="/#current" role="button">
               xp
             </Link>
-            <Link
-              className="button button--cv__sm"
-              href="/cv"
-              role="button"
-            >
+            <Link className="button button--cv__sm" href="/cv" role="button">
               cv
             </Link>
           </nav>
         </div>
       </div>
     </header>
-  );
+  )
 }
