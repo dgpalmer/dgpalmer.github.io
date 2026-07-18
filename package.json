@@ -1,7 +1,10 @@
 {
   "name": "dgpalmer.github.io",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
+  "engines": {
+    "node": ">=22 <23"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -9,25 +12,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mdx-js/loader": "^3.1.0",
-    "@mdx-js/react": "^3.1.0",
-    "@next/mdx": "^15.3.2",
-    "@next/third-parties": "^15.3.2",
-    "@types/mdx": "^2.0.13",
-    "next": "^16.1.5",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.2.10",
+    "@next/third-parties": "^16.2.10",
+    "@types/mdx": "^2.0.14",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "react-responsive": "^10.0.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.6",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "serve": "^14.2.5",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5"
+    "@biomejs/biome": "^2.5.4",
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.19",
+    "serve": "^14.2.6",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
   }
 }
