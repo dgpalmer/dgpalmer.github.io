@@ -3,10 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main # or your default branch
 
 permissions:
-  contents: write  # allows pushing to gh-pages
+  contents: write # allows pushing to gh-pages
 
 jobs:
   build-and-deploy:
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "22"
 
       - name: Install dependencies
         run: npm ci
@@ -34,4 +34,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           cname: www.donovanpalmer.net
-
